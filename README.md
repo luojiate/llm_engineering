@@ -1,91 +1,91 @@
-# LLM Engineering - Master AI and LLMs
+# LLM 工程實戰 — 精通 AI 與大型語言模型
 
-## Your 8 week journey to proficiency starts today
+## 你的 8 週精通之旅，從今天開始
 
 ![Voyage](assets/voyage.jpg)
 
-_If you're looking at this in Cursor, please right click on the filename in the Explorer on the left, and select "Open preview", to view the formatted version._
+_若你在 Cursor 中閱讀，請在左側檔案總管對檔名按右鍵，選擇「Open preview」以檢視排版後的版本。_
 
-I'm so happy you're joining me on this path. We'll be building immensely satisfying projects in the coming weeks. Some will be easy, some will be challenging, many will ASTOUND you! The projects build on each other so you develop deeper and deeper expertise each week. One thing's for sure: you're going to have a lot of fun along the way.
+很高興你加入這趟旅程。接下來幾週我們會打造許多令人滿足的專案——有的簡單、有的有挑戰性，很多會讓你驚豔！專案彼此銜接，每週都會累積更深的實力。可以肯定的是：一路上會很好玩。
 
-Any questions, please ask me on Udemy or at ed@edwarddonner.com. More details at the top of the course resources [here](https://edwarddonner.com/2024/11/13/llm-engineering-resources/).
+有任何問題，歡迎在 Udemy 上問我，或寄信至 ed@edwarddonner.com。課程資源頁面頂部有[更多說明](https://edwarddonner.com/2024/11/13/llm-engineering-resources/)。
 
-### Before you begin
+### 開始之前
 
-I'm here to help you be most successful with your learning. If you hit any snafus, or if you have any ideas on how I can improve the course, please do reach out in the platform or by emailing me direct (ed@edwarddonner.com). It's always great to connect with people on LinkedIn to build up the community - you'll find me here:  
+我會盡力協助你學得最好。若遇到卡關，或對課程有改進建議，請在平台上聯絡我，或直接寄信（ed@edwarddonner.com）。也歡迎在 LinkedIn 上連結，一起壯大社群：  
 https://www.linkedin.com/in/eddonner/   
 
-And I'm starting to build a YouTube channel with extra content - please [check it out here](https://youtube.com/@edward.donner).  
-And this is new to me, but I'm also trying out X/Twitter at [@edwarddonner](https://x.com/edwarddonner) - if you're on X, please show me how it's done 😂  
+我正在經營 YouTube 頻道，有更多補充內容——[歡迎來看看](https://youtube.com/@edward.donner)。  
+另外我也剛開始用 X/Twitter：[@edwarddonner](https://x.com/edwarddonner)——若你也在 X 上，歡迎教教我怎麼玩 😂  
 
-Resources to accompany the course, including the slides and useful links, are here:  
+課程配套資源（投影片、實用連結等）在這裡：  
 https://edwarddonner.com/2024/11/13/llm-engineering-resources/
 
-My digital twin that can answer common FAQ (and get me involved!) is here:  
+可回答常見 FAQ 的數位分身（需要時也會轉給我本人）在這裡：  
 https://edwarddonner.com/avatar/
 
-## Instant Gratification instructions for Week 1, Day 1 - with Llama 3.2 **not** Llama 3.3
+## 第一週第一天的即時成就感 — 使用 Llama 3.2，**不要**用 Llama 3.3
 
-### Important note: see my warning about Llama3.3 below - it's too large for home computers! Stick with llama3.2 - several students have missed this warning...
+### 重要提醒：請看下方關於 Llama 3.3 的警告——對家用電腦來說太大了！請堅持使用 llama3.2——已有好幾位學生忽略了這點……
 
-We will start the course by installing Ollama so you can see results immediately!
-1. Download and install Ollama from https://ollama.com noting that on a PC you might need to have administrator permissions for the install to work properly
-2. On a PC, start a Command prompt / Powershell (Press Win + R, type `cmd`, and press Enter). On a Mac, start a Terminal (Applications > Utilities > Terminal).
-3. Run `ollama run llama3.2` or for smaller machines try `ollama run llama3.2:1b` - **please note** steer clear of Meta's latest model llama3.3 because at 70B parameters that's way too large for most home computers!  
-4. If this doesn't work: you may need to run `ollama serve` in another Powershell (Windows) or Terminal (Mac), and try step 3 again. On a PC, you may need to be running in an Admin instance of Powershell.  
-5. And if that doesn't work on your box, I've set up this on the cloud. This is on Google Colab, which will need you to have a Google account to sign in, but is free:  https://colab.research.google.com/drive/1-_f5XZPsChvfU1sJ0QqCePtIuc55LSdu?usp=sharing
+我們會先安裝 Ollama，讓你立刻看到成果！
+1. 從 https://ollama.com 下載並安裝 Ollama；在 PC 上可能需要管理員權限才能正常安裝
+2. PC：開啟命令提示字元 / PowerShell（按 Win + R，輸入 `cmd`，Enter）。Mac：開啟終端機（應用程式 > 工具程式 > 終端機）
+3. 執行 `ollama run llama3.2`；若機器較小可試 `ollama run llama3.2:1b`——**請注意**避開 Meta 最新的 llama3.3，70B 參數對多數家用電腦過大！
+4. 若不行：在另一個 PowerShell（Windows）或終端機（Mac）執行 `ollama serve`，再重試步驟 3。PC 上可能需要在「以系統管理員身分執行」的 PowerShell 中操作
+5. 若本機仍無法使用，我已放在雲端。這是 Google Colab，需 Google 帳號登入，但免費：https://colab.research.google.com/drive/1-_f5XZPsChvfU1sJ0QqCePtIuc55LSdu?usp=sharing
 
-Any problems, please contact me!
+有任何問題，請聯絡我！
 
-## Before the Setup instructions - a special note
+## 正式安裝說明之前 — 特別說明
 
-Early on in the course (on Day 2), I give a demo of a very cool, popular product called Claude Code. It's an AI coding tool, similar to Cursor that we use on the course. I'm only showing this as an example of Agentic AI in action; it's not a tool that's covered explicitly on this course, particularly as we're in Cursor. But if you want to use Claude Code yourself, the Quick Start guide from Anthropic is [here](https://docs.claude.com/en/docs/claude-code/quickstart).
+課程早期（第二天）我會示範 Claude Code——一款很酷的 AI 程式工具，類似本課程使用的 Cursor。那只是代理式 AI 的範例；本課程不會深入教這套工具，尤其我們用的是 Cursor。若你想自行使用 Claude Code，Anthropic 的快速入門在[這裡](https://docs.claude.com/en/docs/claude-code/quickstart)。
 
-## OK - now on to Setup instructions
+## 好 — 進入安裝說明
 
-After we do the Ollama quick project, and after I introduce myself and the course, we get to work with the full environment setup.  
+完成 Ollama 快速專案、聽完自我介紹與課程概覽後，我們會進行完整環境設定。
 
-Hopefully I've done a decent job of making these guides bulletproof - but please contact me right away if you hit roadblocks:
+希望這些指南夠穩——若仍卡關，請立刻聯絡我：
 
-Setup instructions: [Setup Instructions All Platforms](setup/SETUP-new.md)
+安裝說明：[各平台安裝說明](setup/SETUP-new.md)
 
-### An important point on API costs (which are optional! No need to spend if you don't wish)
+### 關於 API 費用（可選！不想花錢也完全沒問題）
 
-During the course, I'll suggest you try out the leading models at the forefront of progress, known as the Frontier models. I'll also suggest you run open-source models using Google Colab. These services have some charges, but I'll keep cost minimal - like, a few cents at a time. And I'll provide alternatives if you'd prefer not to use them.
+課程中我會建議你試用處於 AI 最前沿的領先模型（Frontier models），也會建議用 Google Colab 跑開源模型。這些服務會收費，但我會把成本壓到很低——例如每次幾美分。若不想用，我也會提供替代方案。
 
-Please do monitor your API usage to ensure you're comfortable with spend; I've included links below. There's no need to spend anything more than a couple of dollars for the entire course. Some AI providers such as OpenAI require a minimum credit like \$5 or local equivalent; we should only spend a fraction of it, and you'll have plenty of opportunity to put it to good use in your own projects. During Week 7 you have an option to spend a bit more if you're enjoying the process - I spend about \$10 myself and the results make me very happy indeed! But it's not necessary in the least; the important part is that you focus on learning.
+請監控 API 用量，確保支出在你可接受範圍；下方有連結。整門課不必花超過幾美元。部分供應商（如 OpenAI）可能要求最低儲值（例如 \$5 或當地等值）；我們只會用到其中一小部分，剩餘額度還能用在個人專案。第七週若玩得很開心，可以選擇多花一點——我自己大約花 \$10，結果很滿意！但完全非必要；重點是學習。
 
-### Free alternative to Paid APIs
+### 付費 API 的免費替代方案
 
-See [Guide 9](guides/09_ai_apis_and_ollama.ipynb) in the guides directory for the detailed approach with exact code for Ollama, Gemini, OpenRouter and more!
+詳見 guides 目錄的[指南 9](guides/09_ai_apis_and_ollama.ipynb)，內含 Ollama、Gemini、OpenRouter 等的具體程式碼。
 
-### How this Repo is organized
+### 本 Repo 的組織方式
 
-There are folders for each of the "weeks", representing modules of the class, culminating in a powerful autonomous Agentic AI solution in Week 8 that draws on many of the prior weeks.    
-Follow the setup instructions above, then open the Week 1 folder and prepare for joy.
+依「週」分資料夾，對應課程模組，最後在第八週整合成強大的自主代理式 AI 方案，會用到前面多週的內容。  
+請先完成上方安裝，再開啟 Week 1 資料夾，準備享受吧。
 
-### The most important part
+### 最重要的一點
 
-The mantra of the course is: the best way to learn is by **DOING**. I don't type all the code during the course; I execute it for you to see the results. You should work along with me or after each lecture, running each cell, inspecting the objects to get a detailed understanding of what's happening. Then tweak the code and make it your own. There are juicy challenges for you throughout the course. I'd love it if you wanted to submit a Pull Request for your code (see the Github guide in the guides folder) and I can make your solutions available to others so we share in your progress; as an added benefit, you'll be recognized in GitHub for your contribution to the repo. While the projects are enjoyable, they are first and foremost designed to be _educational_, teaching you business skills that can be put into practice in your work.
+課程口訣：**動手做**才是最好學法。課上我不會邊打程式邊讓你看；我會執行給你看結果。請跟著我做，或在每堂課後自己跑每個儲存格、檢查物件，真正理解發生了什麼。然後改程式、變成你的版本。課程中有很多值得挑戰的練習。若願意用 Pull Request 分享你的程式（見 guides 裡的 GitHub 指南），我可以讓其他人看到你的成果；你也會在 GitHub 上被記名感謝。專案好玩，但首要目的是**教學**，讓你學到能用在工作上的商業技能。
 
-## Starting in Week 3, we'll also be using Google Colab for running with GPUs
+## 從第三週起，我們也會用 Google Colab 跑 GPU
 
-You should be able to use the free tier or minimal spend to complete all the projects in the class. I personally signed up for Colab Pro+ and I'm loving it - but it's not required.
+用免費方案或極少支出，應能完成所有專案。我個人訂了 Colab Pro+，很滿意——但非必要。
 
-Learn about Google Colab and set up a Google account (if you don't already have one) [here](https://colab.research.google.com/)
+了解 Google Colab、建立 Google 帳號（若還沒有）[點這裡](https://colab.research.google.com/)
 
-The colab links are in the folders for Week 3 and Week 7 - if you open up the lab for each day, you'll find a direct link to the colab.
+Colab 連結在 Week 3 與 Week 7 資料夾——打開每天的 lab 即可看到直接連結。
 
-### Monitoring API charges
+### 監控 API 費用
 
-You can keep your API spend very low throughout this course; you can monitor spend at the dashboards: [here](https://platform.openai.com/usage) for OpenAI, [here](https://console.anthropic.com/settings/cost) for Anthropic.
+整門課 API 支出可以很低；可在儀表板監控：OpenAI [這裡](https://platform.openai.com/usage)，Anthropic [這裡](https://console.anthropic.com/settings/cost)。
 
-The charges for the exercsies in this course should always be quite low, but if you'd prefer to keep them minimal, then be sure to always choose the cheapest versions of models:
-1. For OpenAI: Always use model `gpt-4.1-nano` in the code
-2. For Anthropic: Always use model `claude-3-haiku-20240307` in the code instead of the other Claude models
-3. During week 7, look out for my instructions for using the cheaper dataset
+本課練習費用通常很低；若想壓到最低，請一律選最便宜的模型：
+1. OpenAI：程式中一律用 `gpt-4.1-nano`
+2. Anthropic：一律用 `claude-3-haiku-20240307`，不要用其他 Claude 型號
+3. 第七週留意我關於使用較便宜資料集的說明
 
-Please do message me or email me at ed@edwarddonner.com if this doesn't work or if I can help with anything. I can't wait to hear how you get on.
+若仍有問題或需要協助，請訊息或寄信 ed@edwarddonner.com。很期待聽到你的進展！
 
 <table style="margin: 0; text-align: left;">
     <tr>
@@ -93,10 +93,10 @@ Please do message me or email me at ed@edwarddonner.com if this doesn't work or 
             <img src="assets/resources.jpg" width="150" height="150" style="display: block;" />
         </td>
         <td>
-            <h2 style="color:#f71;">Other resources</h2>
-            <span style="color:#f71;">I've put together this webpage with useful resources for the course. This includes links to all the slides.<br/>
+            <h2 style="color:#f71;">其他資源</h2>
+            <span style="color:#f71;">我整理了這個網頁，彙整課程實用資源，包含所有投影片連結。<br/>
             <a href="https://edwarddonner.com/2024/11/13/llm-engineering-resources/">https://edwarddonner.com/2024/11/13/llm-engineering-resources/</a><br/>
-            Please keep this bookmarked, and I'll continue to add more useful links there over time.
+            請加入書籤，我會持續補充連結。
             </span>
         </td>
     </tr>
